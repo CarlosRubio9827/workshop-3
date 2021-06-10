@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(9,100,164,1) 61%, rgba(1,181,234,1) 90%, rgba(0,212,255,1) 100%);
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+.nav{
+    width: 100vw;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.179);
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav p{
+    font-size: 3.2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.nav p img{
+    width: 30px;
+}
+
+.nav .nav-input{
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+.nav .nav-input form{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly
+}
+.nav-city{
+    height: 30px;
+    width: 180px;
+    border-radius: 20px;
+    padding: 10px;
+    /* background-color: rgba(2,0,36,1); */
+    /* color: white; */
+    outline: none;
+    border: 0px;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.nav-city:focus{
+    outline: none;
+}
+.nav-button{
+    background: rgba(2, 0, 36, 0.775);
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    cursor: pointer;
+}
+.nav-button-clear{
+    background: rgba(230, 1, 1, 0.775);
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    cursor: pointer;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 30px 30px;
+
+}
+
+.card{
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.179);
+    box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.508);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.card-temp{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-temp p{
+    font-size: 5.4rem;
+    font-weight: 700;
+}
+.card img{
+    width: 140px;
+}
+.card p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-city{
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 0;
+}
+.card-weather{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-weather p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.card-weather span{
+    font-weight: 100;
+    /* color: red; */
+}
+
+.container-info{
+    font-size: 5.2rem;
+    color: white;
+    /* text-align: center; */
+    grid-column: 1/4;
+    height: 80vh;
+    justify-self: center;
+} 
+
+.container-info p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
