@@ -53,6 +53,7 @@ const search = ()=>{
                 article.append(city, cardTemp, cardWeather)
                 
                 container.appendChild(article)
+                
 
                 if(container.children[0].className == 'container-info'){
                     container.removeChild(containerInfo)
